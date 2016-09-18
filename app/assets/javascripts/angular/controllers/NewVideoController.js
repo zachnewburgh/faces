@@ -1,4 +1,4 @@
-function NewVideoController() {
+function NewVideoController(Video, $location) {
 
   var ctrl = this;
   ctrl.video = new Video();
