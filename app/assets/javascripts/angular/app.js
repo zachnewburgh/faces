@@ -1,6 +1,6 @@
 angular
   .module('app', ['ui.router', 'ngResource', 'templates'])
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $sceDelegateProvider) {
    $stateProvider
      .state('home', {
        url: '/',
@@ -28,4 +28,8 @@ angular
      controller: 'EditVideoController as ctrl'
      });
   $urlRouterProvider.otherwise('/');
+  $sceDelegateProvider.resourceUrlWhitelist([
+     'self',
+     '*://www.youtube.com/**'
+   ]);
 });
