@@ -1,4 +1,4 @@
-function VideosController(Video) {
+function VideosController(Video, $location, $state) {
 
   var ctrl = this;
   ctrl.videos = Video.query();
