@@ -1,0 +1,9 @@
+<h1>Videos</h1>
+
+<div ng-repeat="video in ctrl.videos">
+  <br>{{video.url}}
+
+  <a href="#" ui-sref="home.video({id: video.id})">View Video</a>
+  <a href="#" ui-sref="home.edit({id: video.id})">Edit Video</a>
+  <a href ng-click="ctrl.deleteVideo(video)">Delete Video</a>
+</div> 
