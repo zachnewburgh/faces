@@ -20,7 +20,7 @@ angular
      .state('home.video', {
        url: 'video/:id',
        templateUrl: 'home/show.html',
-       controller: 'ViewVideosController as ctrl'
+       controller: 'ViewVideoController as ctrl'
      })
     .state('home.edit', {
      url: 'edit/:id',
